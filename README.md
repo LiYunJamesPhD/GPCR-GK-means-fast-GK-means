@@ -8,7 +8,7 @@ Deep Convolutional Neural Networks (DCNNs) are vulnerable to images that have be
 # Usage
 
 # License
-All the implementations are used for academic only. If you are interested in our work or have any questions, please reach out the authors of the paper.
+All the implementations are used for academic only. If you are interested in our work for other purposes or have any questions, please reach out the authors of the paper.
 
 # Reference
 ```
