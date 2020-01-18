@@ -8,8 +8,8 @@ Deep Convolutional Neural Networks (DCNNs) are vulnerable to images that have be
 
 # Setup
 
-(1) Download validation images from Imagenet
-Please visit the website http://image-net.org/download-images and sign up an account to download all validation images (50,000 images)
+(1) Download validation images from Imagenet <br/>
+Please visit the website http://image-net.org/download-images and sign up an account to download all validation images (50,000 images).
 
 (2) Random Image Selection
 
