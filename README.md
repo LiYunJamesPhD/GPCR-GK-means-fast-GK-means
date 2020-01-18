@@ -8,7 +8,28 @@ Deep Convolutional Neural Networks (DCNNs) are vulnerable to images that have be
 
 # Setup
 
+(1) Download validation images from Imagenet
+
+
+(2) Random Image Selection
+
+
+
+
 # Usage
+
+(1) Adversarial Image Generation
+
+IFGSM
+
+DeepFool
+
+(2) 
+
+(3) Image Classification
+
+
+
 
 # License
 All the implementations are used for academic only. If you are interested in our work for other purposes or have any questions, please reach out the authors of the paper.
