@@ -18,6 +18,40 @@ To make a new dataset with few images, please run the following commands
 ```
 ```
 
+2. rename all the images in the new dataset
+```
+```
+
+3. perform an image classification task to generate a result list
+```
+```
+
+
+
+
+
+Not finish yet....
+4. select all images
+```
+```
+
+5. choose the new 
+```
+```
+
+6. make the new dataset with few images from 50,000 images
+```
+```
+
+
+algorithm:
+1. run "choose_img_from_ratio.py" to choose the squarest images. 
+2. run "run_move_rename_imgs.sh" to rename all images.
+3. run "img_classification.sh" to generate lists.
+4. run "img_check_dataset.awk" to have common images.
+5. run "choose_img_from_ratio.py" to choose a subset of images. (e.g. 1000)
+6. run "move_imgs.sh" to create a smaller dataset from 50,000 images.
+
 
 
 # Usage
