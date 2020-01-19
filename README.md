@@ -12,7 +12,11 @@ Deep Convolutional Neural Networks (DCNNs) are vulnerable to images that have be
 Please visit the website http://image-net.org/download-images and sign up an account to download all validation images (50,000 images).
 
 **(2) Random Image Selection**
+To select random images with, please run the following commands
 
+1. calculate the ratio of width to height
+```
+```
 
 
 
