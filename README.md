@@ -21,12 +21,16 @@ Please visit the website http://image-net.org/download-images and sign up an acc
 **(1) Adversarial Image Generation**
 We adopt Iterative implementations of Fast Gradient Sign Method (IFGSM) and DeepFool from two Github implemetations [2][3] accordingly. Our implementations enable users to take one or more input images to craft adversarial images.
 
+Note: Before running two shell scripts, users need to adapt a directory path accordingly.
+
 To perform the **IFGSM** attack, please run the following command
 ```
+./adversarial_attack/run_ifgsm_attack.sh <a directory path to all input images> <a deep learning model e.g. resnet18 or inception_v3> <a directory path to adversarial images>
 ```
 
 Similarly, plese run the following command to perform the **DeepFool** attach
 ```
+./adversarial_attack/run_deepfool_attack.sh <a directory path to all input images> <a deep learning model e.g. resnet18 or inception_v3> <a directory path to adversarial images>
 ```
 
 **(2) Remove Adversarial Perturbation**
@@ -52,6 +56,6 @@ All the implementations are used for academic only. If you are interested in our
          booktitle = {IEEE International Symposium on Multimedia},
          year = {2019}
      }
-[2]  IFGSM https://github.com/sarathknv/adversarial-examples-pytorch/tree/master/iterative
-[3]  DeepFool https://github.com/LTS4/DeepFool/tree/master/Python
+[2]  IFGSM Implementation: https://github.com/sarathknv/adversarial-examples-pytorch/tree/master/iterative
+[3]  DeepFool Implementation: https://github.com/LTS4/DeepFool/tree/master/Python
 ```
