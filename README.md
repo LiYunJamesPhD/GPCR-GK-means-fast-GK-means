@@ -56,7 +56,7 @@ algorithm:
 
 # Usage
 
-**(1) Adversarial Image Generation**
+**(1) Adversarial Image Generation** <br/>
 We adopt Iterative implementations of Fast Gradient Sign Method (IFGSM) and DeepFool from two Github implemetations [2][3] accordingly. Our implementations enable users to take one or more input images to craft adversarial images.
 
 Note: Before running two shell scripts, users need to adapt a directory path accordingly.
@@ -73,12 +73,12 @@ Similarly, plese run the following command to perform the **DeepFool** attack
 <a deep learning model e.g. resnet18 or inception_v3> <a directory path to adversarial images>
 ```
 
-**(2) Remove Adversarial Perturbation**
+**(2) Remove Adversarial Perturbation** <br/>
 
 Our three proposed approaches
 
 
-**(3) Image Classification**
+**(3) Image Classification** <br/>
 
 Note: put the reference.....
 
