@@ -25,12 +25,14 @@ Note: Before running two shell scripts, users need to adapt a directory path acc
 
 To perform the **IFGSM** attack, please run the following command
 ```
-./adversarial_attack/run_ifgsm_attack.sh <a directory path to all input images> <a deep learning model e.g. resnet18 or inception_v3> <a directory path to adversarial images>
+./adversarial_attack/run_ifgsm_attack.sh <a directory path to all input images> 
+<a deep learning model e.g. resnet18 or inception_v3> <a directory path to adversarial images>
 ```
 
-Similarly, plese run the following command to perform the **DeepFool** attach
+Similarly, plese run the following command to perform the **DeepFool** attack
 ```
-./adversarial_attack/run_deepfool_attack.sh <a directory path to all input images> <a deep learning model e.g. resnet18 or inception_v3> <a directory path to adversarial images>
+./adversarial_attack/run_deepfool_attack.sh <a directory path to all input images> 
+<a deep learning model e.g. resnet18 or inception_v3> <a directory path to adversarial images>
 ```
 
 **(2) Remove Adversarial Perturbation**
@@ -39,6 +41,7 @@ Our three proposed approaches
 
 
 **(3) Image Classification**
+
 Note: put the reference.....
 
 
