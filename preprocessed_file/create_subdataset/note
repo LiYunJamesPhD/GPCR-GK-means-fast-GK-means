@@ -1,10 +1,7 @@
 
 
-miss "img_classification.sh" and "run_move_rename_imgs.sh"
-
 
 algorithm:
-
 1. run "choose_img_from_ratio.py" to choose the squarest images.
 2. run "run_move_rename_imgs.sh" to rename all images.
 3. run "img_classification.sh" to generate lists.
