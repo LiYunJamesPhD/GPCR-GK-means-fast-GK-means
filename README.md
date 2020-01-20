@@ -16,13 +16,20 @@ To make a new dataset with few images, please run the following commands
 
 1. calculate the ratio of the short side to the long side for each image
 ```
+./calculate_ratio.sh <a directory to input images>
 ```
 
-2. rename all the images in the new dataset
+2. choose the squarest images
 ```
+python3 choose_img_from_ratio.py <a path to an input directory> <a smaller number e.g. 5000> <a bigger number e.g. 5500>
 ```
 
-3. perform an image classification task to generate a result list
+3. rename all selected images from step 2
+```
+./run_move_rename_imgs.sh <a list with 1000 or 5000 selected images> <a path to an output directory>
+```
+
+4. perform an image classification task to generate a result list
 ```
 ```
 
@@ -45,9 +52,10 @@ Not finish yet....
 
 
 algorithm:
-1. run "choose_img_from_ratio.py" to choose the squarest images. 
+1. run "choose_img_from_ratio.py" to choose the squarest images.  (done)
 2. run "run_move_rename_imgs.sh" to rename all images.
 3. run "img_classification.sh" to generate lists.
+
 4. run "img_check_dataset.awk" to have common images.
 5. run "choose_img_from_ratio.py" to choose a subset of images. (e.g. 1000)
 6. run "move_imgs.sh" to create a smaller dataset from 50,000 images.
