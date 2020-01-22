@@ -12,8 +12,15 @@ Deep Convolutional Neural Networks (DCNNs) are vulnerable to images that have be
 Please visit the website http://image-net.org/download-images and sign up an account to download all validation images (50,000 images).
 
 **(2) Random Image Selection** <br/>
-To make a new dataset with few images, please run the following commands
+An algorithm to make a new dataset with few images:
+1. run "choose_img_from_ratio.py" to choose the squarest images.
+2. run "run_move_rename_imgs.sh" to rename all images.
+3. run "img_classification.sh" to generate lists.
+4. run "img_check_dataset.awk" to have common images.
+5. run "choose_img_from_ratio.py" to choose a subset of images. (e.g. 1000)
+6. run "move_imgs.sh" to create a smaller dataset from 50,000 images.
 
+To make a new dataset with few images, please run the following commands
 1. calculate the ratio of the short side to the long side for each image
 ```
 ./calculate_ratio.sh <a directory to input images>
@@ -21,7 +28,7 @@ To make a new dataset with few images, please run the following commands
 
 2. choose the squarest images
 ```
-python3 choose_img_from_ratio.py <a path to an input directory> <a smaller number e.g. 5000> <a bigger number e.g. 5500>
+python3 choose_img_from_ratio.py <a path to an input file> <a smaller number e.g. 5000> <a bigger number e.g. 5500>
 ```
 
 3. rename all selected images from step 2
@@ -31,36 +38,19 @@ python3 choose_img_from_ratio.py <a path to an input directory> <a smaller numbe
 
 4. perform an image classification task to generate a result list
 ```
+./img_classification.sh <a directory path to input images> <deep learning model e.g. inception_v3> 
+<a flag to load preprocessed images (yes or no)> <a file path to classification results>
 ```
 
-
-
-
-
-Not finish yet....
-4. select all images
+5. choose a small number of images randomly
 ```
-```
-
-5. choose the new 
-```
+python3 choose_img_from_ratio.py <a path to an input file> <a smaller number e.g. 1000> <a bigger number e.g. 2500>
 ```
 
 6. make the new dataset with few images from 50,000 images
 ```
+./move_imgs.sh <a path to an input file with a list of images>
 ```
-
-
-algorithm:
-1. run "choose_img_from_ratio.py" to choose the squarest images.  (done)
-2. run "run_move_rename_imgs.sh" to rename all images.
-3. run "img_classification.sh" to generate lists.
-
-4. run "img_check_dataset.awk" to have common images.
-5. run "choose_img_from_ratio.py" to choose a subset of images. (e.g. 1000)
-6. run "move_imgs.sh" to create a smaller dataset from 50,000 images.
-
-
 
 # Usage
 
