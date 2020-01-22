@@ -55,7 +55,7 @@ python3 choose_imgs.py <a path to an input file> <a smaller number e.g. 1000> <a
 # Usage
 
 **(1) Adversarial Image Generation** <br/>
-We adopt Iterative implementations of Fast Gradient Sign Method (IFGSM) and DeepFool from two Github implemetations [2][3] accordingly. Our implementations enable users to take one or more input images to craft adversarial images.
+We adopt Iterative Fast Gradient Sign Method (IFGSM) and DeepFool from two Github implemetations [2][3] accordingly. Our implementations enable users to take one or more input images to craft adversarial images.
 
 Note: Before running two shell scripts, users need to adapt a directory path accordingly.
 
@@ -72,17 +72,34 @@ Similarly, plese run the following command to perform the **DeepFool** attack
 ```
 
 **(2) Remove Adversarial Perturbation** <br/>
+We implemented our proposed approaches in python3 with OpenCV and shell. In order to use our implementations easily, we provided shell scripts to users. Please run the following commands to perform GPCR, GK-means, fast GK-means. For K-means, we followed the same idea in an OpenCV tutorial [4] to perform color quantization.
 
-Our three proposed approaches
+GPCR
+```
+./run_gpcr.sh <a directory path to input images> <the number of colors e.g. 64 or 128> 
+<a directory path to output images>
+```
 
+GK-means
+```
+./run_gkmeans.sh <a directory path to input images> <the number of colors e.g. 64 or 128> 
+<a directory path to output images>
+```
+
+fast GK-means
+```
+./run_fast_gkmeans.sh <a directory path to input images> <the number of colors e.g. 64 or 128> 
+<a directory path to output images>
+```
 
 **(3) Image Classification** <br/>
+We adopt an implementation [5] for image classification and tranfer learning to be able to display top-5 classification results. Before running the folllowing command, users must refer to the implementation [5] to make two directories for train and val.
 
-Note: put the reference.....
-
-
-
-
+To perform image classification, please run the following command
+```
+./img_classification.sh <a directory path to input images> <deep learning model e.g. inception_v3> 
+<a flag to load preprocessed images (yes or no)> <a file path to classification results>
+```
 
 # License
 All the implementations are used for academic only. If you are interested in our work for other purposes or have any questions, please reach out the authors of the paper.
@@ -97,4 +114,6 @@ All the implementations are used for academic only. If you are interested in our
      }
 [2]  IFGSM Implementation: https://github.com/sarathknv/adversarial-examples-pytorch/tree/master/iterative
 [3]  DeepFool Implementation: https://github.com/LTS4/DeepFool/tree/master/Python
+[4]  OpenCV Tutorial https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_ml/py_kmeans/py_kmeans_opencv/py_kmeans_opencv.html
+[5]  Image Classification for Imagenet https://github.com/floydhub/imagenet
 ```
