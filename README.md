@@ -55,9 +55,7 @@ python3 choose_imgs.py <a path to an input file> <a smaller number e.g. 1000> <a
 # Usage
 
 **(1) Adversarial Image Generation** <br/>
-We adopt Iterative Fast Gradient Sign Method (IFGSM) and DeepFool from two Github implemetations [2][3] accordingly. Our implementations enable users to take one or more input images to craft adversarial images.
-
-Note: Before running two shell scripts, users need to adapt a directory path accordingly.
+We adopt Iterative Fast Gradient Sign Method (IFGSM) and DeepFool from two Github implemetations [2][3] accordingly. Our implementations enable users to take one or more input images to craft adversarial images. Before running two shell scripts, users need to adapt a directory path accordingly.
 
 To perform the **IFGSM** attack, please run the following command
 ```
@@ -86,7 +84,7 @@ GK-means
 <a directory path to output images>
 ```
 
-fast GK-means
+Fast GK-means
 ```
 ./run_fast_gkmeans.sh <a directory path to input images> <the number of colors e.g. 64 or 128> 
 <a directory path to output images>
