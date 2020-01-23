@@ -99,6 +99,11 @@ To perform image classification, please run the following command
 <a flag to load preprocessed images (yes or no)> <a file path to classification results>
 ```
 
+To calculate top-1, top-3, and top-5 classification accuracy, please run the following command
+```
+awk -f top1_top5_calculation.awk <a path to classification result file>
+```
+
 # License
 All the implementations are used for academic only. If you are interested in our work for other purposes or have any questions, please reach out the authors of the paper.
 
