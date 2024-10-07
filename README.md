@@ -1,5 +1,5 @@
 # GPCR_GK-means_fast_GK-means
-This repo is an implemenataion of Gaussian smoothing and PNM color reduction (GPCR), color quantization using Gaussian smoothing and K-means (GK-means), and fast GK-means in our paper: "Leveraging Image Processing Techniques to Thwart Adversarial Attacks in Image Classification" [1].
+This repo is an implemenataion of Gaussian smoothing and PNM color reduction (GPCR), color quantization using Gaussian smoothing and K-means (GK-means), and fast GK-means in our paper: "**Leveraging Image Processing Techniques to Thwart Adversarial Attacks in Image Classification**" [1].
 
 ![Image description](/overall_results.png)
 
